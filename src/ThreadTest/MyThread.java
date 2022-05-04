@@ -8,9 +8,9 @@ package ThreadTest;
 public class MyThread extends Thread {
     @Override
     public void run() {
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 100; i++) {
             if (i % 2 == 0) {
-                System.out.println(i);
+                System.out.println("ThreadName: " + Thread.currentThread().getName() + "Num:" + i);
             }
         }
     }
